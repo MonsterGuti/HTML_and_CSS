@@ -1,0 +1,16 @@
+body {
+    background-color: lightblue;
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+th {
+    background-color: green
+}
+
+th, td {
+    border: 3px, solid grey;
+    padding: 10px
+}
