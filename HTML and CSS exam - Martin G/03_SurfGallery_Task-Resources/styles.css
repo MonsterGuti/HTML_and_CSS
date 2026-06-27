@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #fdfdfc;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+nav {
+background: linear-gradient(
+        to right,
+        #0e6775 0%,
+        #198596 35%,
+        #37b2c2 70%,
+        #95d7e2 100%
+    );  text-align: center;
+      padding: 0;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.nav-links li a {
+  display: block;
+  padding: 14px 28px;
+  color: #e0f5f7;
+  font-family: 'Nunito', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+}
+
+.nav-links li.active a {
+  background-color: rgba(213, 207, 207, 0.25);
+  font-family: 'Bebas Neue', sans-serif;
+  color: #fff;
+  letter-spacing: 0.08em;
+  border: 1px solid rgba(255,255,255,0.5);
+}
+
+.nav-links li a:hover {
+  background-color: rgba(255,255,255,0.08);
+}
+
+.hero {
+background: linear-gradient(
+        to right,
+        #0e6775 0%,
+        #198596 35%,
+        #37b2c2 70%,
+        #95d7e2 100%
+    );  text-align: center;
+  padding: 80px 20px 90px;
+  color: #fff;
+}
+
+.hero h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 52px;
+  letter-spacing: 0.12em;
+  margin-bottom: 18px;
+}
+
+.hero p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  opacity: 0.9;
+}
+
+.btn-hero {
+  display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: #fff;
+  padding: 8px 24px;
+  font-size: 15px; 
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.btn-hero:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+.articles {
+  margin-top: 50px;
+  
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background: #f5f0e8;
+  padding: 60px 80px;
+  max-width: 100%;
+}
+
+.card {
+  flex: 1;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  background: transparent; 
+}
+
+.card img {
+  width: 100%;
+  height: 420px;       
+  object-fit: cover;
+  display: block;
+}
+
+
+.card .card-content {  
+  background: #ffffff;
+  padding: 25px 20px;  
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;
+  flex-grow: 1;        
+}
+
+.card .card-content h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #222;
+  margin-bottom: 12px;
+}
+
+.card .card-content p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  color: #666;
+  text-align: justify; 
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex-grow: 1;  
+}
+
+.btn-read {
+  margin-top: auto;   
+  display: inline-block;
+  border: 1px solid #aaa;
+  color: #555;
+  padding: 7px 18px;
+  font-size: 12px;
+  font-family: 'Nunito', sans-serif;
+  background: #ffffff;
+}
+
+.btn-read:hover {
+  background: #eee;
+}
+
+.cta-banner {
+  background: #f4f0e8;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-inner {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  border: 1px solid #ccc;
+  padding: 20px 32px;
+  background: #738d8f;
+}
+
+.cta-inner p {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #faf9f9;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.btn-cta {
+  display: inline-block;
+  background-color: #fbfbfb;
+  color: #555;
+  padding: 10px 22px;
+  font-size: 13px;
+  font-family: 'Nunito', sans-serif;
+  white-space: nowrap;
+}
+
+.btn-cta:hover {
+  background-color: #1a9aa8;
+}
+
+.weirdest {
+  background: #ffffff;
+  padding: 50px 80px;
+  text-align: center;
+}
+
+.weirdest h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.weirdest-link {
+  padding: 1px 20px;
+  display: block;
+  font-size: 13px;
+  color: #888;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-weight: 300;
+}
+
+.weirdest-link:hover {
+  color: #2ab7ca;
+}
+
+.weirdest-gallery {
+  margin-top: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.weirdest-gallery img {
+  width: 31%;
+  max-width: 200px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.footer-cta {
+  background: #ede8df;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.footer-cta h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #222;
+  margin-bottom: 14px;
+}
+
+.footer-cta p {
+  font-size: 15px;
+  font-weight: 300;
+  color: #2ab7ca;
+  max-width: 620px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+footer {
+  background: #e8e2d8;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #d5cfc5;
+    padding: 50px;
+
+}
+
+footer p {
+  font-size: 12px;
+  color: #888;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  
+}

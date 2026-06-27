@@ -1,0 +1,120 @@
+@media (max-width: 600px) {
+
+    body {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* ── Nav ── */
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 16px;
+        position: relative;
+    }
+
+    .nav-logo a {
+        padding-left: 0;
+        font-size: 18px;
+    }
+
+    /* Показваме бургер менюто */
+    .nav-burger-menu {
+        display: block;
+        cursor: pointer;
+        color: #c9d4b0;
+        font-size: 20px;
+    }
+
+    /* Скриваме nav-menu по подразбиране */
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        order: 3;
+    }
+
+    /* Показваме при checkbox hack */
+    input#check:checked ~ .nav-menu {
+        display: flex;
+    }
+
+    .nav-menu li a {
+        display: block;
+        padding: 10px 16px;
+        border-top: 1px solid rgba(201, 212, 176, 0.2);
+    }
+
+    /* Бутоните Sign In / Join */
+    .nav-user-btns {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 8px;
+        order: 4;
+        padding: 10px 0 6px 0;
+    }
+
+    .nav-user-btns > li:nth-child(1) > button,
+    .nav-user-btns > li:nth-child(2) > button {
+        width: 100%;
+        padding: 12px 0;
+        font-size: 14px;
+    }
+
+    /* ── Hero ── */
+    .content-info {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 24px;
+        text-align: center;
+    }
+
+    /* Скриваме снимката на мобилна версия */
+    .content-info-img {
+        display: none;
+    }
+
+    .content-info-welcome {
+        width: 100%;
+    }
+
+    .content-info-welcome h2 {
+        font-size: 56px;
+    }
+
+    .content-info-welcome button {
+        width: 100%;
+    }
+
+    /* ── Services ── */
+    .content-services {
+        flex-direction: column;
+        margin: 20px 16px;
+        gap: 12px;
+    }
+
+    .content-services div {
+        width: 100%;
+    }
+
+    /* ── Gallery ── */
+    .gallery {
+        flex-direction: column;
+        padding: 20px 16px;
+        gap: 10px;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* ── Footer ── */
+    footer {
+        padding: 24px 0;
+    }
+}
